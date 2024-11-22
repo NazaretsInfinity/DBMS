@@ -1,7 +1,7 @@
 USE AcademySQL
 GO
 
-CREATE TABLE Direction
+CREATE TABLE Directions
 (
   direction_id TINYINT PRIMARY KEY,
   direction_name NVARCHAR(150) NOT NULL
