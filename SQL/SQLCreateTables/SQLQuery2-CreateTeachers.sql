@@ -10,3 +10,10 @@ CREATE TABLE Teachers
  work_since DATE	NOT NULL
 );
 GO --Execute command batch 
+
+CREATE TABLE TachersGroupsRelation
+(
+teacher INT CONSTRAINT FK_TGR_Teacher FOREIGN KEY REFERENCES Teachers(teacher_id),
+[group] INT CONSTRAINT FK_TGR_Group FOREIGN KEY REFERENCES Groups(group_id),
+PRIMARY KEY (teacher, [group])
+);

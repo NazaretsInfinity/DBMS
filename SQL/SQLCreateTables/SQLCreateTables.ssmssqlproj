@@ -22,11 +22,41 @@
     </LogicalFolder>
     <LogicalFolder Name="Queries" Type="0" Sorted="true">
       <Items>
+        <FileNode Name="SQLQuery0.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:Y3_MAX\SQLEXPRESS:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>Y3_MAX\SQLEXPRESS</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>SQLQuery0.sql</FullPath>
+        </FileNode>
         <FileNode Name="SQLQuery1-CreateStudentsBranch.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:Y3_MAX\SQLEXPRESS:True</AssociatedConnectionMoniker>
           <AssociatedConnSrvName>Y3_MAX\SQLEXPRESS</AssociatedConnSrvName>
           <AssociatedConnUserName />
           <FullPath>SQLQuery1-CreateStudentsBranch.sql</FullPath>
+        </FileNode>
+        <FileNode Name="SQLQuery2-CreateTeachers.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:Y3_MAX\SQLEXPRESS:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>Y3_MAX\SQLEXPRESS</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>SQLQuery2-CreateTeachers.sql</FullPath>
+        </FileNode>
+        <FileNode Name="SQLQuery3 - Create Disciplines.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:Y3_MAX\SQLEXPRESS:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>Y3_MAX\SQLEXPRESS</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>SQLQuery3 - Create Disciplines.sql</FullPath>
+        </FileNode>
+        <FileNode Name="SQLQuery4 - Relations To Disciplines.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:Y3_MAX\SQLEXPRESS:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>Y3_MAX\SQLEXPRESS</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>SQLQuery4 - Relations To Disciplines.sql</FullPath>
+        </FileNode>
+        <FileNode Name="SQLQuery5 - CreateJournal.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:Y3_MAX\SQLEXPRESS:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>Y3_MAX\SQLEXPRESS</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>SQLQuery5 - CreateJournal.sql</FullPath>
         </FileNode>
       </Items>
     </LogicalFolder>
