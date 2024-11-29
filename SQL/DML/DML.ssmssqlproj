@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<SqlWorkbenchSqlProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="DML">
+  <Items>
+    <LogicalFolder Name="Connections" Type="2" Sorted="true">
+      <Items>
+        <ConnectionNode Name="Y3_MAX\SQLEXPRESS:Y3_MAX\neror">
+          <Created>2024-11-27T20:45:36.237603+05:00</Created>
+          <Type>SQL</Type>
+          <Server>Y3_MAX\SQLEXPRESS</Server>
+          <UserName />
+          <Authentication>Windows Authentication</Authentication>
+          <InitialDB>AcademySQL_FULL</InitialDB>
+          <LoginTimeout>30</LoginTimeout>
+          <TrustServerCertificate>True</TrustServerCertificate>
+          <HostNameInServerCertificate />
+          <EncryptionOption>True</EncryptionOption>
+          <ExecutionTimeout>0</ExecutionTimeout>
+          <ConnectionProtocol>NotSpecified</ConnectionProtocol>
+          <ApplicationName>Microsoft SQL Server Management Studio - Query</ApplicationName>
+        </ConnectionNode>
+      </Items>
+    </LogicalFolder>
+    <LogicalFolder Name="Queries" Type="0" Sorted="true">
+      <Items>
+        <FileNode Name="SQLQuery1- insert directions.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:Y3_MAX\SQLEXPRESS:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>Y3_MAX\SQLEXPRESS</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>SQLQuery1- insert directions.sql</FullPath>
+        </FileNode>
+        <FileNode Name="SQLQuery2 - insert groups.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:Y3_MAX\SQLEXPRESS:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>Y3_MAX\SQLEXPRESS</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>SQLQuery2 - insert groups.sql</FullPath>
+        </FileNode>
+        <FileNode Name="SQLQuery3 - INSERT students.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:Y3_MAX\SQLEXPRESS:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>Y3_MAX\SQLEXPRESS</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>SQLQuery3 - INSERT students.sql</FullPath>
+        </FileNode>
+        <FileNode Name="SQLQuery4 - SELECT Students.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:Y3_MAX\SQLEXPRESS:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>Y3_MAX\SQLEXPRESS</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>SQLQuery4 - SELECT Students.sql</FullPath>
+        </FileNode>
+        <FileNode Name="SQLQuery5 - SELECT Students.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:Y3_MAX\SQLEXPRESS:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>Y3_MAX\SQLEXPRESS</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>SQLQuery5 - SELECT Students.sql</FullPath>
+        </FileNode>
+        <FileNode Name="SQLQuery6 - AGREGATION.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:Y3_MAX\SQLEXPRESS:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>Y3_MAX\SQLEXPRESS</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>SQLQuery6 - AGREGATION.sql</FullPath>
+        </FileNode>
+      </Items>
+    </LogicalFolder>
+    <LogicalFolder Name="Miscellaneous" Type="3" Sorted="true">
+      <Items />
+    </LogicalFolder>
+  </Items>
+</SqlWorkbenchSqlProject>
