@@ -6,6 +6,6 @@ SELECT
 FROM Teachers, Disciplines, TeachersDisciplinesRelation
 WHERE 
 --discipline = 1 -- Ane ID ya need.
-discipline_name LIKE  N'%OOP C++%'
+discipline_name LIKE  N'%Hard%'
 AND discipline_id = discipline
 AND teacher_id = teacher

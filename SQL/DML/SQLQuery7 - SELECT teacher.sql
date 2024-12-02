@@ -6,6 +6,6 @@ SELECT
 	 discipline_name	AS N'Disciplines'
 FROM Teachers, Disciplines, TeachersDisciplinesRelation
 WHERE 
-teacher = 3 -- any ID ya need
+teacher = 1 -- any ID ya need
 AND teacher_id = teacher
 AND discipline_id = discipline

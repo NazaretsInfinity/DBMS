@@ -1,4 +1,4 @@
-USE AcademySQL;
+USE PD_318_DML;
 
 SELECT 
    -- last_name + ' ' +first_name + ' ' + middle_name AS N'FULL NAME',
@@ -10,10 +10,10 @@ SELECT
 FROM  Students, Groups, Directions
 WHERE Students.[group] = Groups.group_id
 AND	  Groups.direction = Directions.direction_id
-AND direction_name LIKE N'%Graphic%'
+--AND direction_name LIKE N'%Graphic%'
 --AND group_name = N'PD_321'
 --AND direction_name = N'Graphic Design'
 --ORDER BY birth_date ASC;
-ORDER BY [Age];
-;
+ORDER BY group_name
+
 
