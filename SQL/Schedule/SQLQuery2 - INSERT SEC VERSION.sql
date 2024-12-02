@@ -1,11 +1,11 @@
-USE PD_318_DML
+USE AcademySQL_FULL
 GO
 
+SET DATEFIRST 1;
 
+DECLARE @start_date			AS DATE	    = '2024-10-25';
 
-DECLARE @start_date			AS DATE	    = '2024-10-25'
-
-DECLARE @time				AS TIME		= '18:30:00'
+DECLARE @time				AS TIME		= '18:30:00';
 DECLARE @group				AS INT		=  (SELECT group_id FROM Groups WHERE group_name = 'PV_318')
 DECLARE @discipline			AS SMALLINT = (SELECT discipline_id FROM Disciplines WHERE discipline_name LIKE ('%MS SQL Server%'))
 
@@ -17,29 +17,34 @@ DECLARE @date				AS DATE	    = @start_date
 DECLARE @number_of_lessons	AS SMALLINT = (SELECT number_of_lessons FROM Disciplines WHERE discipline_id = @discipline)
 DECLARE @number_of_lesson	AS SMALLINT  = 0
 
---PRINT(@teacher)
---PRINT(@group)
---PRINT(@discipline)
---PRINT(@number_of_lessons)
 
 WHILE(@number_of_lesson < @number_of_lessons)
 BEGIN 		
+	
+
+	PRINT(@date)
+	PRINT(DATENAME(WEEKDAY,@date));
+	PRINT(DATEPART(DW, @date));
+
+	PRINT(@number_of_lesson);
+	PRINT(@time);
+
 	INSERT Schedule 	([date], [time], [group], discipline, teacher, spent)
 	VALUES	    	    ( @date,  @time,  @group, @discipline, @teacher, IIF(@date < GETDATE(), 1, 0))
 
-	--PRINT(FORMATMESSAGE(N'%i, %s, %s' , @number_of_lesson, DATENAME(dw, @date), CONVERT(VARCHAR(8), @time)))
-	--PRINT(@date)
+	SET @number_of_lesson = @number_of_lesson + 1
+	PRINT(N'----------------------')
 
-IF(@number_of_lesson%2 != 0)
-		--IF(DATENAME(dw, @date) = 'Friday')
-		IF(DATEPART(dw, @date) = 6)
-			SET @date = DATEADD(dd, 3, @date)
+	PRINT(@number_of_lesson)
+	PRINT(DATEADD(MINUTE,90,@time));
 
-		ELSE
-			SET @date = DATEADD(dd, 2, @date)
+	INSERT Schedule 	([date], [time], [group], discipline, teacher, spent)
+	VALUES	    	    ( @date,  @time,  @group, @discipline, @teacher, IIF(@date < GETDATE(), 1, 0))
 
-SET @number_of_lesson = @number_of_lesson + 1
-SET @time = IIF(@number_of_lesson%2 != 0 , '20:00' , '18:30')
+
+	SET @number_of_lesson = @number_of_lesson + 1
+	PRINT(N'=====================')
+
+	SET @date = DATEADD(DAY, IIF(DATEPART(DW,@date)= 1 OR DATEPART(DW,@date) = 3, 2 ,3 ), @date)
+
 END
-
---SELECT * FROM Schedule
