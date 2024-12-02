@@ -1,4 +1,4 @@
-USE PD_318_DML;
+USE AcademySQL_FULL
 GO
 
 
@@ -22,13 +22,13 @@ DECLARE @number_of_lesson	AS SMALLINT  = 0
 --PRINT(@discipline)
 --PRINT(@number_of_lessons)
 
-WHILE(@number_of_lesson < @number_of_lessons) -- there are 26 of them
+WHILE(@number_of_lesson < @number_of_lessons)
 BEGIN 		
-	--INSERT Schedule 	([date], [time], [group], discipline, teacher, spent)
-	--VALUES	    	(@date,  @time,  @group, @discipline, @teacher, IIF([@date] < GETDATE(), 1, 0))
+	INSERT Schedule 	([date], [time], [group], discipline, teacher, spent)
+	VALUES	    	    ( @date,  @time,  @group, @discipline, @teacher, IIF(@date < GETDATE(), 1, 0))
 
-	PRINT(FORMATMESSAGE(N'%i, %s' , @number_of_lesson, DATENAME(dw, @date)))
-	PRINT(@date)
+	--PRINT(FORMATMESSAGE(N'%i, %s' , @number_of_lesson, DATENAME(dw, @date)))
+	--PRINT(@date)
 
 IF(@number_of_lesson%2 != 0)
 		--IF(DATENAME(dw, @date) = 'Friday')
