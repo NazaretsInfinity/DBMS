@@ -1,7 +1,7 @@
 USE PD_318_DML;
 GO
 
-CREATE PROCEDURE sp_SetScheduleForStacionar
+ALTER PROCEDURE sp_SetScheduleForStacionar
 	@group_name			AS NVARCHAR(16),
 	@discipline_name	AS NVARCHAR(150),
 	@teacher_last_name  AS NVARCHAR(150),
@@ -28,23 +28,25 @@ BEGIN
 	WHILE(@number_of_lesson < @number_of_lessons)
 	BEGIN 		
 		
-	
-	
-		IF NOT EXISTS (SELECT lesson_id FROM Schedule WHERE [date] = @date AND [time] = @time AND [group] = @group AND discipline = @discipline)
+		-- check this her
+		IF NOT EXISTS (SELECT day_off_id FROM DaysOFF WHERE DaysOFF.[date] = @date)
 		BEGIN
-			INSERT Schedule 	([date], [time], [group], discipline, teacher, spent)
-			VALUES	    	    ( @date,  @time,  @group, @discipline, @teacher, IIF(@date < GETDATE(), 1, 0))
-		END
-		SET @number_of_lesson = @number_of_lesson + 1
+			IF NOT EXISTS (SELECT lesson_id FROM Schedule WHERE [date] = @date AND [time] = @time AND [group] = @group AND discipline = @discipline)
+			BEGIN
+				INSERT Schedule 	([date], [time], [group], discipline, teacher, spent)
+				VALUES	    	    ( @date,  @time,  @group, @discipline, @teacher, IIF(@date < GETDATE(), 1, 0))
+			END
+			SET @number_of_lesson = @number_of_lesson + 1
 	
 	
 	
-		IF NOT EXISTS (SELECT lesson_id FROM Schedule WHERE [date] = @date AND [time] = DATEADD(MINUTE, 90 ,@time) AND [group] = @group AND discipline = @discipline)
-		BEGIN
-			INSERT Schedule 	([date], [time], [group], discipline, teacher, spent)
-			VALUES	    	    ( @date,  DATEADD(MINUTE, 90 ,@time),  @group, @discipline, @teacher, IIF(@date < GETDATE(), 1, 0))
+			IF NOT EXISTS (SELECT lesson_id FROM Schedule WHERE [date] = @date AND [time] = DATEADD(MINUTE, 90 ,@time) AND [group] = @group AND discipline = @discipline)
+			BEGIN
+				INSERT Schedule 	([date], [time], [group], discipline, teacher, spent)
+				VALUES	    	    ( @date,  DATEADD(MINUTE, 90 ,@time),  @group, @discipline, @teacher, IIF(@date < GETDATE(), 1, 0))
+			END 
+		    SET @number_of_lesson = @number_of_lesson + 1
 		END 
-		SET @number_of_lesson = @number_of_lesson + 1
 	
 		SET @date = DATEADD(DAY, IIF(DATEPART(DW,@date)= 1 OR DATEPART(DW,@date) = 3, 2 ,3 ), @date)
 	END

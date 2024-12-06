@@ -1,22 +1,12 @@
 USE PD_318_DML;
 GO
 
-INSERT DaysOFF ([date], holiday)
-
-VALUES		   ('2024-01-01',1),	  ('2025-01-01',1),
-         
-			   ('2024-01-07',2),	  ('2025-01-07',2),
-			  
-			   ('2024-02-23',3),	  ('2025-02-23',3),		  
-
-			   ('2024-03-08',4),	  ('2025-03-08',4),
-			  
-			   ('2024-05-05',5),	  ('2025-04-20',5),
-			   
-			   ('2024-05-01',6),	  ('2025-05-01',6),
-
-			   ('2024-05-09',6),	  ('2025-05-09',6)
-
-
-SELECT * FROM DaysOFF
-ORDER BY [date]
+SET DATEFIRST 1;
+--EXEC sp_NewYearDaysFor 2024;
+--EXEC sp_MayHolidaysFor 2024;
+SELECT
+	[date],
+	DATENAME(WEEKDAY, [date]),
+	holiday_name
+FROM DaysOFF JOIN Holidays ON (holiday = holiday_id)
+WHERE holiday = 6
