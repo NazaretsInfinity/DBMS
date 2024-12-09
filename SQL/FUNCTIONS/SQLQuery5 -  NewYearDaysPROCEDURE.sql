@@ -7,8 +7,8 @@ AS
 BEGIN
 	DECLARE @start_date		AS DATE		 = dbo.GetLastMonthOfYear(@year - 1);
 	DECLARE @date		AS DATE		 =    @start_date
-	DECLARE @holiday		AS SMALLINT  = (SELECT holiday_id FROM Holidays WHERE holiday_name LIKE N'New Year');
-	WHILE (DATEDIFF(DAY,@start_date, @date) <= (SELECT duration FROM Holidays WHERE holiday_name LIKE N'New Year'))
+	DECLARE @holiday		AS SMALLINT  = (SELECT holiday_id FROM Holidays WHERE holiday_name LIKE N'%Christmas%');
+	WHILE (DATEDIFF(DAY,@start_date, @date) <= (SELECT duration FROM Holidays WHERE holiday_name LIKE N'%Christmas%'))
 	BEGIN
 		IF NOT EXISTS (SELECT day_off_id FROM DaysOFF WHERE [date] = @date)
 		BEGIN

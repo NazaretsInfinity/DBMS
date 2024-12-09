@@ -2,5 +2,5 @@ USE PD_318_DML;
 GO
 
 DELETE FROM DaysOFF
-
+WHERE holiday = 7
 SELECT * FROM DaysOFF

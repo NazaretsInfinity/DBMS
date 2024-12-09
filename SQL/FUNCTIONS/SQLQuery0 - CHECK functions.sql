@@ -1,6 +1,13 @@
 USE PD_318_DML;
 GO
 
-PRINT(dbo.GetLastMonthOfYear(2024))
-PRINT(dbo.GetLastMonthOfApril(2024))
-PRINT(dbo.GetPenultimateMonOfAugust(2024))
+EXEC sp_SetDaysOff 2024;
+
+SELECT
+	[date],
+	DATENAME(WEEKDAY, [date]) AS N'Weekday',
+	holiday_name AS N'Holiday'
+	
+FROM DaysOFF JOIN Holidays ON (holiday = holiday_id)
+
+
