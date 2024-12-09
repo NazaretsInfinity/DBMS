@@ -22,6 +22,12 @@
     </LogicalFolder>
     <LogicalFolder Name="Queries" Type="0" Sorted="true">
       <Items>
+        <FileNode Name="SQLQuery0 - CHECK PROCEDURES.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:Y3_MAX\SQLEXPRESS:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>Y3_MAX\SQLEXPRESS</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>SQLQuery0 - CHECK PROCEDURES.sql</FullPath>
+        </FileNode>
         <FileNode Name="SQLQuery1 - INSERT SCHEDULE.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:Y3_MAX\SQLEXPRESS:True</AssociatedConnectionMoniker>
           <AssociatedConnSrvName>Y3_MAX\SQLEXPRESS</AssociatedConnSrvName>
@@ -40,12 +46,6 @@
           <AssociatedConnUserName />
           <FullPath>SQLQuery2 - INSERT SEC VERSION.sql</FullPath>
         </FileNode>
-        <FileNode Name="SQLQuery22 - CHECK PROCEDURES.sql">
-          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:Y3_MAX\SQLEXPRESS:True</AssociatedConnectionMoniker>
-          <AssociatedConnSrvName>Y3_MAX\SQLEXPRESS</AssociatedConnSrvName>
-          <AssociatedConnUserName />
-          <FullPath>SQLQuery22 - CHECK PROCEDURES.sql</FullPath>
-        </FileNode>
         <FileNode Name="SQLQuery3 - CREATE PROCEDURE ScheduleForGroup.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:Y3_MAX\SQLEXPRESS:True</AssociatedConnectionMoniker>
           <AssociatedConnSrvName>Y3_MAX\SQLEXPRESS</AssociatedConnSrvName>
@@ -57,6 +57,30 @@
           <AssociatedConnSrvName>Y3_MAX\SQLEXPRESS</AssociatedConnSrvName>
           <AssociatedConnUserName />
           <FullPath>SQLQuery3 - SELECT FROM SCHEDULE.sql</FullPath>
+        </FileNode>
+        <FileNode Name="SQLQuery4 - DELETE SCHEDULE.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:Y3_MAX\SQLEXPRESS:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>Y3_MAX\SQLEXPRESS</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>SQLQuery4 - DELETE SCHEDULE.sql</FullPath>
+        </FileNode>
+        <FileNode Name="SQLQuery5 - StacionarToSchedulePROCEDURE.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:Y3_MAX\SQLEXPRESS:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>Y3_MAX\SQLEXPRESS</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>SQLQuery5 - StacionarToSchedulePROCEDURE.sql</FullPath>
+        </FileNode>
+        <FileNode Name="SQLQuery6 - CREATE Holidays.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>SQLQuery6 - CREATE Holidays.sql</FullPath>
+        </FileNode>
+        <FileNode Name="SQLQuery7 - INSERT holidays.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>SQLQuery7 - INSERT holidays.sql</FullPath>
         </FileNode>
       </Items>
     </LogicalFolder>

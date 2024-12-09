@@ -76,6 +76,12 @@
           <AssociatedConnUserName />
           <FullPath>SQLQuery9 count teachers.sql</FullPath>
         </FileNode>
+        <FileNode Name="SQLQuery9.1 - INSERT DaysOFF.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:Y3_MAX\SQLEXPRESS:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>Y3_MAX\SQLEXPRESS</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>SQLQuery9.1 - INSERT DaysOFF.sql</FullPath>
+        </FileNode>
       </Items>
     </LogicalFolder>
     <LogicalFolder Name="Miscellaneous" Type="3" Sorted="true">

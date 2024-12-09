@@ -1,0 +1,16 @@
+USE PD_318_DML;
+GO
+
+
+ALTER FUNCTION GetPenultimateMonOfAugust 
+(
+		@year AS INT
+)
+RETURNS DATE
+AS
+BEGIN 
+	DECLARE @date AS	DATE = DATEFROMPARTS(@year, 08 ,31);
+	RETURN DATEADD(DAY, DATEPART(WEEKDAY, @date) *(-1) - 6, @date);
+END
+
+

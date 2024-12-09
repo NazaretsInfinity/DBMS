@@ -1,6 +1,6 @@
 USE PD_318_DML;
 GO
 
-PRINT(dbo.CountLessonsForGroups(N'PV_318', N'%ADO.NET%'));
-PRINT(dbo.CountPassedLessons(N'PV_318', N'%ADO.NET%'));
-PRINT(dbo.CountPlannedLessons(N'PV_318', N'%ADO.NET%'));
+PRINT(dbo.GetLastMonthOfYear(2024))
+PRINT(dbo.GetLastMonthOfApril(2024))
+PRINT(dbo.GetPenultimateMonOfAugust(2024))

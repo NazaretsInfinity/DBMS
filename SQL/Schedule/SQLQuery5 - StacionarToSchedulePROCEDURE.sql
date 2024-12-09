@@ -28,7 +28,7 @@ BEGIN
 	WHILE(@number_of_lesson < @number_of_lessons)
 	BEGIN 		
 		
-		-- check this her
+	
 		IF NOT EXISTS (SELECT day_off_id FROM DaysOFF WHERE DaysOFF.[date] = @date)
 		BEGIN
 			IF NOT EXISTS (SELECT lesson_id FROM Schedule WHERE [date] = @date AND [time] = @time AND [group] = @group AND discipline = @discipline)

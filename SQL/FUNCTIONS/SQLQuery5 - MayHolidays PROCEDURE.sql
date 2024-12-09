@@ -1,14 +1,14 @@
 USE PD_318_DML;
 GO
 
-CREATE PROCEDURE sp_MayHolidaysFor @year AS INT
+ALTER PROCEDURE sp_MayHolidaysFor @year AS INT
 AS
 BEGIN
 	DECLARE @start_date		AS DATE = dbo.GetLastMonthOfApril(@year);
 	DECLARE @date			AS DATE = @start_date;
 	DECLARE @holiday		AS SMALLINT = (SELECT holiday_id FROM Holidays WHERE holiday_name LIKE N'%May%')
 
-	WHILE(DATEDIFF(DAY, @start_date, @date) <= 14)
+	WHILE(DATEDIFF(DAY, @start_date, @date) <= (SELECT duration FROM Holidays WHERE holiday_name LIKE N'%May%'))
 	BEGIN
 		IF NOT EXISTS(SELECT day_off_id FROM DaysOFF WHERE [date] = @date)
 		BEGIN

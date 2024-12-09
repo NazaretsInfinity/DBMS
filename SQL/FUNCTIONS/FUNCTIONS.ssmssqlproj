@@ -2,21 +2,91 @@
 <SqlWorkbenchSqlProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="FUNCTIONS">
   <Items>
     <LogicalFolder Name="Connections" Type="2" Sorted="true">
-      <Items />
+      <Items>
+        <ConnectionNode Name="Y3_MAX\SQLEXPRESS:Y3_MAX\neror">
+          <Created>2024-12-09T18:50:19.3380036+05:00</Created>
+          <Type>SQL</Type>
+          <Server>Y3_MAX\SQLEXPRESS</Server>
+          <UserName />
+          <Authentication>Windows Authentication</Authentication>
+          <InitialDB>PD_318_DML</InitialDB>
+          <LoginTimeout>30</LoginTimeout>
+          <TrustServerCertificate>True</TrustServerCertificate>
+          <HostNameInServerCertificate />
+          <EncryptionOption>True</EncryptionOption>
+          <ExecutionTimeout>0</ExecutionTimeout>
+          <ConnectionProtocol>NotSpecified</ConnectionProtocol>
+          <ApplicationName>Microsoft SQL Server Management Studio - Query</ApplicationName>
+        </ConnectionNode>
+      </Items>
     </LogicalFolder>
     <LogicalFolder Name="Queries" Type="0" Sorted="true">
       <Items>
+        <FileNode Name="SQLQuery0 - CHECK functions.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:Y3_MAX\SQLEXPRESS:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>Y3_MAX\SQLEXPRESS</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>SQLQuery0 - CHECK functions.sql</FullPath>
+        </FileNode>
+        <FileNode Name="SQLQuery0 - DELETE bad kids.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:Y3_MAX\SQLEXPRESS:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>Y3_MAX\SQLEXPRESS</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>SQLQuery0 - DELETE bad kids.sql</FullPath>
+        </FileNode>
         <FileNode Name="SQLQuery1 - COUNT lessons for group.sql">
           <AssociatedConnectionMoniker />
           <AssociatedConnSrvName />
           <AssociatedConnUserName />
           <FullPath>SQLQuery1 - COUNT lessons for group.sql</FullPath>
         </FileNode>
-        <FileNode Name="SQLQuery2 - CHECK functions.sql">
+        <FileNode Name="SQLQuery2 - COUNT passed or planned lessons.sql">
           <AssociatedConnectionMoniker />
           <AssociatedConnSrvName />
           <AssociatedConnUserName />
-          <FullPath>SQLQuery2 - CHECK functions.sql</FullPath>
+          <FullPath>SQLQuery2 - COUNT passed or planned lessons.sql</FullPath>
+        </FileNode>
+        <FileNode Name="SQLQuery4 - GetLastMonthOfApril.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>SQLQuery4 - GetLastMonthOfApril.sql</FullPath>
+        </FileNode>
+        <FileNode Name="SQLQuery4 - GetLastMOnthOfJuly.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:Y3_MAX\SQLEXPRESS:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>Y3_MAX\SQLEXPRESS</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>SQLQuery4 - GetLastMOnthOfJuly.sql</FullPath>
+        </FileNode>
+        <FileNode Name="SQLQuery4 - GetLastMonthOfYear.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:Y3_MAX\SQLEXPRESS:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>Y3_MAX\SQLEXPRESS</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>SQLQuery4 - GetLastMonthOfYear.sql</FullPath>
+        </FileNode>
+        <FileNode Name="SQLQuery4 - GetPrenultimateMonOfAugust.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:Y3_MAX\SQLEXPRESS:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>Y3_MAX\SQLEXPRESS</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>SQLQuery4 - GetPrenultimateMonOfAugust.sql</FullPath>
+        </FileNode>
+        <FileNode Name="SQLQuery5 -  NewYearDaysPROCEDURE.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:Y3_MAX\SQLEXPRESS:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>Y3_MAX\SQLEXPRESS</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>SQLQuery5 -  NewYearDaysPROCEDURE.sql</FullPath>
+        </FileNode>
+        <FileNode Name="SQLQuery5  - SummerHolidays PROCEDURE.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:Y3_MAX\SQLEXPRESS:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>Y3_MAX\SQLEXPRESS</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>SQLQuery5  - SummerHolidays PROCEDURE.sql</FullPath>
+        </FileNode>
+        <FileNode Name="SQLQuery5 - MayHolidays PROCEDURE.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:Y3_MAX\SQLEXPRESS:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>Y3_MAX\SQLEXPRESS</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>SQLQuery5 - MayHolidays PROCEDURE.sql</FullPath>
         </FileNode>
       </Items>
     </LogicalFolder>

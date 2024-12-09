@@ -6,9 +6,9 @@ ALTER PROCEDURE sp_NewYearDaysFor
 AS 
 BEGIN
 	DECLARE @start_date		AS DATE		 = dbo.GetLastMonthOfYear(@year - 1);
-	DECLARE @date		AS DATE		 = @start_date
-	DECLARE @holiday		AS SMALLINT  = (SELECT holiday_id FROM holidays WHERE holiday_name = N'Holidays');
-	WHILE (DATEDIFF(DAY,@start_date, @date) <= 14)
+	DECLARE @date		AS DATE		 =    @start_date
+	DECLARE @holiday		AS SMALLINT  = (SELECT holiday_id FROM Holidays WHERE holiday_name LIKE N'New Year');
+	WHILE (DATEDIFF(DAY,@start_date, @date) <= (SELECT duration FROM Holidays WHERE holiday_name LIKE N'New Year'))
 	BEGIN
 		IF NOT EXISTS (SELECT day_off_id FROM DaysOFF WHERE [date] = @date)
 		BEGIN
