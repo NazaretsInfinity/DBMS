@@ -1,7 +1,7 @@
 USE PD_318_DML;
 GO
 
-EXEC sp_SetDaysOff 2024;
+EXEC sp_SetDaysOff 2025;
 
 SELECT
 	[date],
